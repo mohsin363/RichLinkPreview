@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohsin.richlinkpreview.app.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <com.mohsin.richlinkpreview.RichLinkView
+                android:id="@+id/richLinkView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.mohsin.richlinkpreview.RichLinkView>
+
+            <com.mohsin.richlinkpreview.RichLinkViewTelegram
+                android:id="@+id/richLinkView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </com.mohsin.richlinkpreview.RichLinkViewTelegram>
+
+            <com.mohsin.richlinkpreview.RichLinkViewSkype
+                android:id="@+id/richLinkView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </com.mohsin.richlinkpreview.RichLinkViewSkype>
+
+            <com.mohsin.richlinkpreview.RichLinkViewTwitter
+                android:id="@+id/richLinkView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </com.mohsin.richlinkpreview.RichLinkViewTwitter>
+
+            <Button
+                android:id="@+id/go_to_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="GO to ListView"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
